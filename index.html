@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | ICT Loket</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Wij reparen laptops en computers en meer">
+</head>
+<body>
+    <header>
+        <nav>
+            <button class="hamburger" aria-label="Menu">☰</button>
+            <ul class="nav-menu">
+                <li class="logo-item"><img src="assets/Schermopname_3-2-2026_112730_.jpeg" alt="Logo" class="logo"></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="contacten.html">Contacten</a></li>
+                <li><a href="diensten.html">Diensten</a></li>
+                <li><a href="faq.html">Veelgestelde vragen</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Welkom bij het ICT Loket</h1>
+        <p>Wij helpen je graag met al je ICT-vragen en projecten.</p>
+        <!-- vervangen door juiste afbeelding uit assets-map -->
+        <section>
+            <h2>ICT-afbeelding</h2>
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&amp;xid=m3w5dHqHwzZt8uMiw0&amp;ixid=MnwxMJA3fDB8MHxwaG90by1wYWdlfhx8fg%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1170&amp;q=80" alt="Team collaboration image" class="ict-image" loading="lazy">
+        </section>
+        <section>
+            <h2>Wat doen wij?</h2>
+            <p>Het ICT Loket is het centrale aanspreekpunt voor alle ICT-gerelateerde vragen binnen onze organisatie. Wij bieden ondersteuning bij software, hardware, netwerkproblemen en digitale veiligheid.</p>
+        </section>
+        <section>
+            <h2>Onze diensten</h2>
+            <ul>
+                <li>Ondersteuning bij computerproblemen</li>
+                <li>Advies over software en applicaties</li>
+                <li>Beheer van accounts en wachtwoorden</li>
+                <li>Begeleiding bij digitale projecten</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Openingstijden</h2>
+            <p>Maandag t/m vrijdag: 08:30 - 16:30 uur<br>
+            Locaties:<br>
+            Oss <span style="color:#888; font-size:0.95em;">(coming soon)</span><br>
+            Noordkade 14, Veghel</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 ICT Loket</p>
+        <div class="footer-contact-info">
+            <p>Info@ictloketnoordkade.nl</p>
+            <p>06-89972359</p>
+            <p>Verlengde Noordkade 14</p>
+        </div>
+        <p class="footer-powered-by">powered by</p>
+        <div class="footer-logo">
+            <img src="assets/kw1c logo foto.png" alt="KW1C logo">
+        </div>
+        <img src="assets/mario.jpeg" alt="Mario" class="footer-mario">
+        <img src="assets/okie dokie.jpeg" alt="Okie Dokie" class="footer-okie">
+    </footer>
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

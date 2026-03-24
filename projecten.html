@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projecten | ICT Loket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <button class="hamburger" aria-label="Menu">☰</button>
+            <ul class="nav-menu">
+                <li class="logo-item"><img src="assets/Schermopname_3-2-2026_112730_.jpeg" alt="Logo" class="logo"></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projecten.html" class="active">Projecten</a></li>
+                <li><a href="contacten.html">Contacten</a></li>
+                <li><a href="diensten.html">Diensten</a></li>
+                <li><a href="faq.html">Veelgestelde vragen</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Onze Projecten</h1>
+        <p>Bekijk hier een overzicht van onze lopende en afgeronde ICT-projecten.</p>
+        <section>
+            <h2>Lopende projecten</h2>
+            <ul>
+                <li>Introductie van een nieuw wifi-netwerk voor studenten</li>
+                <li>Beveiligingsupdate van alle schoolcomputers</li>
+                <li>Implementatie van een digitaal aanmeldsysteem</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Afgeronde projecten</h2>
+            <ul>
+                <li>Vernieuwing van de website</li>
+                <li>Workshops digitale veiligheid voor medewerkers</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 ICT Loket</p>
+        <div class="footer-contact-info">
+            <p>Info@ictloketnoordkade.nl</p>
+            <p>06-89972359</p>
+            <p>Verlengde Noordkade 14</p>
+        </div>
+        <p class="footer-powered-by">powered by</p>
+        <div class="footer-logo">
+            <img src="assets/kw1c logo foto.png" alt="KW1C logo">
+        </div>
+        <img src="assets/mario.jpeg" alt="Mario" class="footer-mario">
+        <img src="assets/okie dokie.jpeg" alt="Okie Dokie" class="footer-okie">
+    </footer>
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diensten | ICT Loket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <button class="hamburger" aria-label="Menu">☰</button>
+            <ul class="nav-menu">
+                <li class="logo-item"><img src="assets/Schermopname_3-2-2026_112730_.jpeg" alt="Logo" class="logo"></li>
+                <li><a href="index.html">Home</a></li>
+                
+                <li><a href="contacten.html">Contacten</a></li>
+                <li><a href="diensten.html" class="active">Diensten</a></li>
+                <li><a href="faq.html">Veelgestelde vragen</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Onze Diensten</h1>
+        <section>
+            <h2>Ondersteuning bij computerproblemen</h2>
+            <p>Wij helpen bij hardware- en softwareproblemen, zoals traagheid, crashes en randapparatuur.</p>
+        </section>
+        <section>
+            <h2>Advies en installatie van software</h2>
+            <p>Advies over welke software geschikt is voor jouw behoeften en hulp bij installatie en configuratie.</p>
+        </section>
+        <section>
+            <h2>Beheer van accounts en wachtwoorden</h2>
+            <p>Ondersteuning bij accountproblemen, wachtwoordherstelaanvragen en beveiligingsinstellingen.</p>
+        </section>
+        <section>
+            <h2>Netwerk en wifi</h2>
+            <p>Hulp bij netwerkconfiguratie, wifi-problemen en basisnetwerkbeveiliging.</p>
+        </section>
+        <section>
+            <h2>Workshops en begeleiding</h2>
+            <p>Workshops over digitale veiligheid, gebruik van veelgebruikte software en projectbegeleiding.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 ICT Loket</p>
+        <div class="footer-contact-info">
+            <p>Info@ictloketnoordkade.nl</p>
+            <p>06-89972359</p>
+            <p>Verlengde Noordkade 14</p>
+        </div>
+        <p class="footer-powered-by">powered by</p>
+        <div class="footer-logo">
+            <img src="assets/kw1c logo foto.png" alt="KW1C logo">
+        </div>
+        <img src="assets/mario.jpeg" alt="Mario" class="footer-mario">
+        <img src="assets/okie dokie.jpeg" alt="Okie Dokie" class="footer-okie">
+    </footer>
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

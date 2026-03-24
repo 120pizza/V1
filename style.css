@@ -1,0 +1,414 @@
+body {
+    background: #f7fafd;
+    color: #1a3a5d;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    letter-spacing: 0.01em;
+    padding-bottom: 3em;
+}
+
+=
+header {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    padding: 1.2em 3em 1.2em 3em;
+    justify-content: space-between;
+    box-shadow: 0 2px 8px rgba(26, 58, 93, 0.07);
+    border-bottom: 1px solid #e3eaf2;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    height: 70px;
+    margin-right: 2em;
+    border-radius: 8px;
+    background: #fff;
+    padding: 2px;
+    transition: height 0.2s;
+    box-shadow: none;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2em;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hamburger menu */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #1a3a5d;
+    padding: 0.5em;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+/* when logo is placed as first item in nav */
+nav ul .logo-item {
+    margin-right: 1em;
+}
+
+nav ul .logo-item .logo {
+    height: 50px;
+    margin: 0;
+}
+
+
+nav a {
+    color: #1a3a5d;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.08em;
+    padding: 0.3em 1em;
+    border-radius: 5px;
+    transition: background 0.2s, color 0.2s;
+}
+
+nav a.active,
+nav a:hover {
+    color: #fff;
+    background: #3a7bd5;
+    text-decoration: none;
+}
+
+
+main {
+    max-width: 900px;
+    margin: 3em auto 2em auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+section,
+.card {
+    background: #fff;
+    padding: 1.5em 2em;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(26, 58, 93, 0.06);
+    margin-bottom: 1.5em;
+    border: 1px solid #e3eaf2;
+}
+
+.card {
+    border-left: 4px solid #3a7bd5;
+    margin-bottom: 1.5em;
+}
+
+
+h1,
+h2 {
+    color: #1a3a5d;
+    margin-top: 0;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+}
+
+h2 {
+    font-size: 1.4em;
+    margin-bottom: 0.5em;
+}
+
+
+footer {
+    text-align: center;
+    color: #1a3a5d;
+    background: #fff;
+    padding: 1.8em 0 2em; /* extra ruimte voor mario links onder */
+    position: relative;
+    width: 100%;
+    font-size: 1em;
+    letter-spacing: 0.01em;
+    box-shadow: 0 -2px 8px rgba(26, 58, 93, 0.07);
+    border-top: 1px solid #e3a5f2;
+}
+
+.footer-mario {
+    position: absolute;
+    left: 1rem;
+    bottom: 0.5rem;
+    max-width: 160px;
+    height: auto;
+}
+
+.footer-okie {
+    position: absolute;
+    right: 1rem;
+    bottom: 0.5rem;
+    max-width: 250px;
+    height: auto;
+}
+
+.footer-logo img {
+    max-width: 140px;
+    height: auto;
+}
+
+footer .footer-logo {
+    margin-top: 0.6em;
+}
+
+footer .footer-logo img {
+    max-width: 140px;
+    height: auto;
+}
+
+.footer-powered-by {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0.5em 0;
+    color: #1a3a5d;
+}
+
+.footer-contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin: 0.5em 0;
+    flex-wrap: wrap;
+}
+
+.footer-contact-info p {
+    margin: 0;
+    color: #1a3a5d;
+}
+
+
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 1em;
+    background: none;
+}
+
+.contact-form label {
+    color: #1a3a5d;
+    font-weight: 500;
+    margin-bottom: 0.2em;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.7em;
+    border: 1.2px solid #b5cbe3;
+    border-radius: 5px;
+    background: #f7fafd;
+    color: #1a3a5d;
+    font-size: 1em;
+    outline: none;
+    transition: border 0.2s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border: 1.2px solid #3a7bd5;
+}
+
+.contact-form button {
+    background: #3a7bd5;
+    color: #fff;
+    border: none;
+    padding: 0.8em 2em;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    margin-top: 0.5em;
+}
+
+.contact-form button:hover {
+    background: #1a3a5d;
+    color: #fff;
+}
+
+ul {
+    padding-left: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+a {
+    color: #3a7bd5;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #1a3a5d;
+}
+
+details {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    border-radius: 6px;
+    background: #fafafa;
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* stijl voor ICT-afbeelding */
+.ict-image {
+    max-width: 80%;
+    max-height: 180px;
+    height: auto;
+    display: block;
+    margin: 1em auto;
+}
+
+/* FAQ layout */
+.faq-awnser .faq-content {
+    display: flex;
+    gap: 1.5em;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 1em;
+}
+
+.faq-awnser .faq-text {
+    flex: 1;
+    min-width: 220px;
+}
+
+.faq-image img {
+    max-width: 280px;
+    max-height: 180px;
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+    .ict-image {
+        max-width: 85%;
+        max-height: 170px;
+    }
+
+    .faq-image img {
+        max-width: 220px;
+        max-height: 160px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ict-image {
+        max-width: 90%;
+        max-height: 160px;
+    }
+
+    .faq-awnser .faq-content {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .faq-image img {
+        max-width: 100%;
+        max-height: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        box-shadow: 0 2px 8px rgba(26, 58, 93, 0.1);
+        padding: 1em 0;
+        z-index: 1000;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    header {
+        padding: 1em;
+        position: relative;
+    }
+
+    .logo {
+        height: 40px;
+    }
+
+    .ict-image {
+        max-width: 100%;
+        margin: 0.5em auto;
+        max-height: 200px;
+        object-fit: cover;
+    }
+
+    nav ul .logo-item {
+        display: none; /* Hide logo in menu on mobile */
+    }
+
+    main {
+        max-width: 100%;
+        margin: 1em;
+    }
+
+    section,
+    .card {
+        padding: 1em;
+    }
+
+    footer {
+        position: static;
+        padding: 1em;
+    }
+
+    body {
+        padding-bottom: 0;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.9em;
+    }
+
+    .contact-form button {
+        font-size: 0.9em;
+    }
+}
+    
